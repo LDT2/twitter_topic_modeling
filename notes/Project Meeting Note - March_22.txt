@@ -1,0 +1,16 @@
+Daily Project Check-in Meetings
+- What did you do yesterday?
+- What is your plan today?
+- What problems do you expect?
+
+
+Today (Friday, March 22):
+- Describe your project in 12 words
+- Make github repository
+- What's your next step?
+
+
+Important Dates:
+- 4/1 (Mon) - MVP (close the loop)
+- 4/8 (Mon) - Model Freeze
+- 4/11 (Thur) - Capstone Showcase
