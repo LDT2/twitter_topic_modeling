@@ -24,7 +24,8 @@ The data from this study comes from Twitter’s Election Integrity Datasets - ht
 ### Model Evaluation
 
 ## Findings
-### 
+
+* [Topic Trends Over 2016 ](https://github.com/LDT2/twitter_topic_modeling/blob/master/TopicTrendsOver2016.html)
 
 ## Tools and Technologies
 
