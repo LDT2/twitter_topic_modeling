@@ -1,35 +1,27 @@
 # Topic Modeling and Trend Analysis of Twitter's Elections Integrity Venezuelan Dataset
 Exploratory text analysis to understand the hidden structures and themes of Twitter’s Elections Integrity Datasets
 
-## Purpose
-This project focuses on using NLP to understand the topics, themes, and sentiments discussed in Twitter’s Election Integrity Venezuelan Datasets. In the study, I apply unsupervised learning methodologies to conduct exploratory text analysis to unpack the hidden (or latent) structures and relationships in the Twitter dataset. The goal of this study is to demonstrate my ability as a data scientist to take large amounts of raw data, process it, and then tell a compelling story with it. 
+## Overview
+Starting in October 2018, Twitter released a repository of data based on their investigations into foreign interference in US political conversations using their platform. Twitter identified and suspended a number of accounts who were affiliated with the Internet Research Agency (IRA) or originated from Iran, Russia, Venezuela, and Bangladesh. In an effort to improve transparency and to help the public understand the “alleged foreign influence” on US politics, Twitter has released data associated with the identified accounts.
 
-This study will focus users’ tweets, retweets, and corresponding metadata to uncover hidden themes and relationships in the data.
+My project focuses on using natural language processing to understand the topics and trends discussed in the Venezuelan dataset. I apply unsupervised learning to understand what topics were discussed and to see how this behavior could be linked back to suspicious activity on Twitter’s platform. 
 
-
-## (Developing) Research Questions
-- What are the topics and trends discussed in Twitter’s integrity data?
-    - How do these topics change over time?
-    - Do twitter popularity tags correspond with topics from model?
-- Are there clusters of users driving certain conversation?
-    - Who are the key players?
-
-## Data
+## Data source
 The data from this study comes from Twitter’s Election Integrity Datasets - https://about.twitter.com/en_us/values/elections-integrity.html#data
 
-## Data Pipeline and Analysis Plan
-### Data Collection
-### Data Cleaning
-### Data Analysis and Modeling
-### Model Evaluation
-
-## Findings
-
-* [Topic Trends Over 2016 ](https://github.com/LDT2/twitter_topic_modeling/blob/master/TopicTrendsOver2016.html)
-
-## Tools and Technologies
+## Data processing
+- Criteria for data inclusion: focus on 2016 US presidential election year; no retweets
+- Develop iterative text processing pipeline for majority Spanish language tweets: building stopword corpus, removing URLs and emojis, lowercasing, tokenizing, remo ving symbols, removing accents, removing stopwords, creating bi/trigrams, lemmatizing words
+- Data aggregation: tweets are text documents that inherently short due to character limitations. After removing URLs and special characters/words, individual tweets may be sparse and not contain enough information alone. Aggregating tweets by shared author can improve topic modeling of tweets.
 
 
-## References
+## Data analysis and modeling
+- In natural language processing, topic modeling is a common approach to understand the latent topics in a corpus of texts. This study used a Latent Dirichlet Allocation (LDA) method to extract the topics in Venezuelan Twitter dataset.
+
+## Results 
+- Topics corresponded with current events in 2016
+- Spike in tweets related to US news could be considered as suspicious requiring further investigation
+
+## Acknowledgments
 
 
